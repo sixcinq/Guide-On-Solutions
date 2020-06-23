@@ -1,0 +1,142 @@
+.headerImg {
+	--width: 100%;
+	--height: auto;
+	width: 100%;
+	height: 23.33333rem;
+	background-position-x: center !important;
+	box-shadow: 2px 2px 4px #000000;
+}
+
+.header {
+	background-color: #dfeeee !important;
+	padding-top: 3.5rem;
+	padding-bottom: 3.5rem;
+	--text-align: center;
+	box-sizing: border-box;
+}
+
+.sectionHeader {
+	text-align: center;
+	margin: 10px;
+}
+
+.sectionHeader h1 {
+	font-size: 3.8em;
+	font-weight: 400;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+.cardList {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.mat-card {
+	font-family: EuclidCircular,sans-serif !important;
+}
+
+h3 {
+	font-family: EuclidCircular,sans-serif !important;
+}
+/* Column Gap */
+
+.cardList>* {
+	box-sizing: border-box;
+}
+
+.cardList>*:not(:last-child) {
+	margin-right: 32px;
+}
+
+
+/* Item sizing */
+
+.cardListItem {
+	flex: 0 1 calc(33.3% - 32px);
+}
+
+
+/* medium size viewport */
+
+@media screen and (max-width: 959px) {
+	/* Column Gap */
+	.cardList>*:not(:last-child) {
+		margin-right: 32px;
+	}
+	/* Item sizing */
+	.cardListItem {
+		flex: 0 1 calc(50% - 32px);
+	}
+}
+
+
+/* small size viewport */
+
+@media screen and (max-width: 599px) {
+	.cardList {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.cardList>*:not(:last-child) {
+		margin-right: unset;
+		margin-bottom: 32px;
+	}
+}
+
+.cardServices {
+	text-align: center;
+	max-width: 300px;
+	margin-bottom: 15px;
+}
+
+.cardServices h3 {
+	color: #3792cb;
+}
+
+.icons {
+	font-size: 60px;
+	--text-align: center;
+  color: #ff781f;
+  width: 30%;
+  height: 230%;
+}
+
+.heading-jumbo-small {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	font-size: 46px !important;
+	line-height: 50px !important;
+	font-weight: 400;
+	text-transform: none;
+}
+.services {
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 15%;
+
+}
+
+.zoom {
+	transition: transform .2s;
+	/* Animation */
+	margin: 0 auto;
+}
+
+.zoom:hover {
+	transform: scale(1.5);
+	/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.sub {
+	transition: transform .2s;
+	/* Animation */
+	margin: 0 auto;
+}
+
+.sub:hover {
+	color: green;
+}

@@ -1,0 +1,96 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === true">
+
+    <mat-nav-list>
+      <a mat-list-item routerLink="/services">Services</a>
+      <a mat-list-item routerLink="/about">About</a>
+      <a mat-list-item routerLink="/contact">Contact Us</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <nav>
+      <ul class="menu">
+        <button *ngIf="deviceXs" type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+          <mat-icon aria-label="Side nav toggle icon" *ngIf="!drawer.opened">menu</mat-icon>
+          <mat-icon aria-label="Side nav toggle icon" *ngIf="drawer.opened">close</mat-icon>
+        </button>
+        <div class="branding">
+          <a routerLink="">
+            <img src="../../assets/images/gos.jpg" class="logo" alt="Guide On Solutions">
+          </a>
+        </div>
+        <span class="spacer"></span>
+        <div class="right-col" *ngIf="!deviceXs">
+          <li class="menu-item services"><a routerLink="/services">Services</a>
+            <ul class="submenu">
+              <li class="submenu-item">
+                <ul class="submenu-top">
+                  <li class="submenu-top-item">
+                    <div class="menuIcon zoom"><img src="../../assets/icon/it-gray.png" class="icons" alt="IT Solution">
+                    </div>
+                    <ul class="submenu-list">
+                      <li>
+                        <a mat-menu-item [routerLink]="['/it']">
+                          <span>Information Technology</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a mat-menu-item [routerLink]="['/cp']">
+                          <span>Computer Programming</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a mat-menu-item [routerLink]="['/ct']">
+                          <span>Computer Training</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="submenu-top-item">
+                    <div class="menuIcon zoom"><img src="../../assets/icon/janitor-gray.png" class="icons"
+                        alt="Janitorial Solution"></div>
+                    <ul class="submenu-list">
+                      <li>
+                        <a mat-menu-item [routerLink]="['/jan']">Janitorial</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="submenu-top-item">
+                    <div class="menuIcon zoom"><img src="../../assets/icon/lawn-gray.png" class="icons"
+                        alt="Lawn Service"></div>
+                    <ul class="submenu-list">
+                      <li>
+                        <a mat-menu-item [routerLink]="['/ls']">Lawn Service</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="submenu-top-item">
+                    <div class="menuIcon zoom"><img src="../../assets/icon/bus-gray.png" class="icons"
+                        alt="Transportation Service"></div>
+                    <ul class="submenu-list">
+                      <li><a mat-menu-item [routerLink]="['/trans']">Transportation</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenu-top-item">
+                    <div class="menuIcon zoom"><img src="../../assets/icon/pest-gray.png" class="icons"
+                        alt="Pest Control Service"></div>
+                    <ul class="submenu-list">
+                      <li><a mat-menu-item [routerLink]="['/pc']">Pest Control</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <!-- End .submenu-top -->
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item"><a routerLink="/about" class="menu-item">About</a></li>
+          <li class="menu-item"><a routerLink="/contact" class="contact">Contact Us</a></li>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- Add Content Here -->
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,184 @@
+.header {
+	color: #187dbc;
+	text-align: center;
+	margin: 25px;
+}
+
+.header h2 {
+	font-size: 50px;
+	font-weight: 400;
+}
+
+.headerSection {
+	width: 100%;
+	height: 23.33333rem;
+	background-position-x: center !important;
+	box-shadow: 2px 2px 4px #000000;
+	background-color: #cfd8dc;
+	color: #ffffff;
+	text-align: center;
+    margin-bottom: 30px;
+    background-image: url("../../../assets/images/contact-us.jpg");
+    --background-repeat: no-repeat;
+    background-size: 90% 23.3333rem;
+}
+
+.headerSection h2 {
+	font-size: 70px;
+	font-weight: bold;
+	display: block;
+    padding: 210px 0;
+}
+
+h1 {
+	font-family: EuclidCircular,sans-serif;
+	font-size: 70px;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 700;
+	line-height: 53.9px;
+	display: block;
+	padding: 11.6rem 0;
+}
+
+.c-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 60%;
+	margin: 0 20% 0 20%;
+}
+
+.c-column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+}
+
+.content {
+	display: flex;
+    --margin: 32px auto;
+    margin-bottom: 10px;
+	padding: 15px;
+	max-width: 960px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content p {
+	width: 100%;
+}
+
+.button {
+	padding: 12px 25px;
+	border-radius: 0px;
+	background-color: #1a1b1f;
+	color: #fff;
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: 2px;
+	text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.button:hover {
+	background-color: #32343a;
+}
+
+.iconlist {
+	height: 40px;
+	width: 42px;
+    padding: 9px 0px;
+    top: 50%;
+    
+}
+.gray-med {
+    text-decoration: none;
+    color: #666666;
+}
+.gray-med:visited {
+    text-decoration: none;
+    color: #666666;
+}
+
+.contact-info {
+    color: #29383F;
+    margin: 40px 0px 0px;
+    font-family: EuclidCircular,sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+    --padding-right: 20px;
+}
+
+
+.content p mat-form-field {
+	display: block !important;
+}
+
+textarea.mat-input-element {
+	height: 100px !important;
+}
+
+.contact-icons {
+	color: #000000;
+	--background-color: #000000;
+	--padding: 6px;
+	margin-right: 5px;
+}
+
+.headerImg {
+	width: 100%;
+	height: 23.33333rem;
+	background-position-x: center !important;
+	box-shadow: 2px 2px 4px #000000;
+	;
+}
+
+body {
+	font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+	background: #3AAFAB;
+	color: #fff;
+	padding: 50px 0;
+}
+
+.container {
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.container * {
+	box-sizing: border-box;
+}
+
+.form-container {
+	display: flex;
+	--width: 80%;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.form-container>* {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.social {
+	width: 20%;
+}
+
+.mail {
+    width: 65%;
+    margin: 40px 0px 0px;
+}
+
+.submitButton {
+	color: #ffffff;
+	background-color: #d14600;
+	border-color: #d14600;
+	padding: 8px 46px;
+}

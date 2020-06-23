@@ -1,0 +1,92 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
+html, body { 
+    height: 100%; 
+}
+body { 
+    margin: 0; 
+    --font-family: Roboto, "Helvetica Neue", sans-serif; 
+    --font-family: Montserrat, sans-serif !important;
+    font-family: EuclidCircular,sans-serif !important;
+    color: #1a1b1f;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.video {
+    display: block;
+    width: 100%;
+    height: 608px !important;
+    z-index: 0;
+    --background-color: #ffffff;
+
+    --background: rgb(54,62,66);
+    --background: linear-gradient(90deg, rgba(54,62,66,1) 0%, rgba(255,255,255,1) 50%, rgba(54,62,66,1) 100%);
+
+    background: rgb(40,57,57);
+    background: linear-gradient(90deg, rgba(40,57,57,1) 0%, rgba(255,255,255,1) 50%, rgba(40,57,57,1) 100%);
+}
+
+.progress {
+    display: none !important;
+  }
+
+  ::ng-deep .mat-menu-content {
+    padding-top: 0px !important;
+    padding-bottom: 10px !important;
+    
+    width: 600px !important; 
+    height: 200px !important; 
+  }
+  
+
+  ::ng-deep .mat-menu-content {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .mat-menu-item {
+    line-height:35px;
+    height:35px;
+  }
+
+  ::ng-deep .mat-menu-panel {
+    min-width: 112px;
+    width: 1200px !important;
+    max-width: 1200px !important;
+
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .cdk-overlay-pane {
+    top: 80px !important;
+    right: 256px !important;
+  }
+
+  div#cdk-overlay-0.cdk-overlay-pane {
+    top: 100px !important;
+    right: -250px !important;
+    width: 100%;
+  }
+
+.mat-toolbar {
+  color: #000000;
+  background-color: #ffffff !important;
+
+  font-family: "Scala Sans",Calibri,Geneva,sans-serif;
+  font-size: 18px;
+  text-decoration: inherit;
+  transition: none;
+
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  --top: 80 !important; 
+  z-index: 10;
+  overflow: auto;
+}
